@@ -13,10 +13,10 @@ This version is supported by Redmine 3.2.1
 Installation and Setup
 ----------------------
 
-* Clone or [download](https://github.com/frywer/authors) this repo into your **redmine_root/plugins/** folder
+* Clone or [download](https://github.com/frywer/authors/archive/master.zip) this repo into your **redmine_root/plugins/** folder
 
 ```
-$ git clone https://github.com/paginagmbh/redmine_lightbox2.git
+$ git clone https://github.com/frywer/authors.git
 ```
 * If you downloaded a tarball / zip from master branch, make sure you rename the extracted folder to `authors`
 * You have to run the plugin rake task to provide the assets (from the Redmine root directory):
@@ -33,3 +33,4 @@ Examples of the plugin in use
 <img src="user_show.png" width="250"/>
 <img src="project_show.png" width="250"/>
 </p>
+
