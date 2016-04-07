@@ -1,4 +1,4 @@
-Redmine Lightbox 2
+Redmine Authors
 ==================
 
 This plugin lets you to add authors to your projects.
@@ -25,8 +25,8 @@ $ rake redmine:plugins:migrate RAILS_ENV=production
 ```
 * Restart redmine
 
-Compatibility
--------------
+Examples of the plugin in use
+------------------------------
 
 <p align="center">
 <img src="authors_create.png" width="250"/>
