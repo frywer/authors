@@ -1,0 +1,24 @@
+
+
+
+    <div class="members box" >
+      <h3>Authors </h3>
+
+
+
+      <div style="width: 100%">
+          <% @authors.each  do |author| %>
+            <% if author.user.type != "AnonymousUser"%>
+                <div class="author_view" style="float: left; margin-left: 17px">
+                  <%=avatar author.user, :size => "120"%>
+                  <h3><%= link_to author.user, author.user %></h3>
+                  <p style="font-size: 9px"><%=author.user.email_address.address%> </p>
+                </div>
+            <%end%>
+          <% end %>
+      </div>
+
+      <br>
+
+      <div style="clear: both"></div>
+    </div>

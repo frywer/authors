@@ -1,0 +1,28 @@
+<%=render 'form' %>
+
+<div class="members box" style="float: left">
+<h3>Authors</h3>
+<table cellpadding="10" >
+
+      <tr>
+        <th>User name:</th> <th>Emai address:</th>
+      </tr>
+      <tr>
+        <% @authors.each  do |author| %>
+            <% if author.user.type != "AnonymousUser"%>
+                <td><%= link_to author.user, author.user %></td>
+                <td> <%=author.user.email_address.address%></td>
+                <td><%= link_to 'Delete', {   action: 'destroy',  :id => author[:id],  project_id: Project.find(params[:project_id]) } , method: :delete  %></td>
+            <%else%>
+                <td><%= author.user %></td>
+                <td></td>
+                <td><%= link_to 'Delete', {   action: 'destroy',  :id => author[:id],  project_id: Project.find(params[:project_id]) } , method: :delete  %></td>
+      <%end%>
+      </tr>
+        <% end %>
+
+</table>
+
+<br>
+
+</div>

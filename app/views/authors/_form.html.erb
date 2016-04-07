@@ -1,0 +1,20 @@
+
+
+
+
+
+
+<%= form_for  @author  , url: { controller: 'authors', action: 'create', project_id: @project } do |f| %>
+
+
+
+    <div class="field">
+      <%= f.label :user_id %><br>
+      <!--%= collection_select(:author, :user_id,  User.all , :id, :firstname ,  include_blank: true)%-->
+      <%=select(:author, :user_id, User.all.collect {|p| [ p.firstname + " " + p.lastname, p.id ] }, include_blank: "- Choose Name -")%>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
