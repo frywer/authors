@@ -29,8 +29,7 @@ Compatibility
 -------------
 
 <p align="center">
-<img src="authors_create.png" width="150"/>
-<img src="project_show.png" width="150"/>
-<img src="user_show.png" width="150"/>
-
+<img src="authors_create.png" width="250"/>
+<img src="user_show.png" width="250"/>
+<img src="project_show.png" width="250"/>
 </p>
