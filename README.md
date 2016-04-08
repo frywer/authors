@@ -25,7 +25,7 @@ $ rake redmine:plugins:migrate RAILS_ENV=production
 ```
 * Restart redmine
 
-* You can activate avatar image in administration->settings->Display and choose 'Use Gravatar user icons'
+* You can activate avatar image in **administration->settings->Display** and choose 'Use Gravatar user icons'
 
 Examples of the plugin in use
 ------------------------------
