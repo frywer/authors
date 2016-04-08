@@ -9,7 +9,7 @@
 
 
     <div class="field">
-      <%= f.label :user_id %><br>
+      <h4>List of users</h4>
       <!--%= collection_select(:author, :user_id,  User.all , :id, :firstname ,  include_blank: true)%-->
       <%=select(:author, :user_id, User.all.collect {|p| [ p.firstname + " " + p.lastname, p.id ] }, include_blank: "- Choose Name -")%>
     </div>
